@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'SDAJavascriptRemoteLT3Testing';
+  name: string = '';
+  showGreeting: boolean = false;
+
+  displayName(): void {
+    this.showGreeting = !this.showGreeting
+  }
 }
